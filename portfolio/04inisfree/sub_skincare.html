@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이니스프리</title>
+    <link rel="stylesheet" href="css/innisfree.css">
+    
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- 포털사이트에 노출되는 PC website 정보-->
+    <meta name="title" content="내꺼쇼핑몰">
+    <meta name="Author" content="내꺼">
+    <meta name="Keywords" content="품목, 품목, 품목">
+    <meta name="Description" content="쇼핑몰 설명">
+    
+    <!--포털사이트에 노출되는 모바일 website 정보-->
+    <meta property="og:type" content="mobilesite">
+    <meta property="og:title" content="내꺼쇼핑몰" />
+    <meta property="og:description" content="무엇이든지 팔수 수 있는 기적의 샵" />
+    <meta property="og:image" content="images/m_logo.jpg"/> <!-- 800x400 -->
+    
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+</head>
+<body>
+    <div id="header_km">
+        <div class="header_top">
+            <div class="center_box">
+                <div class="body_color">
+                    <i class="fa-solid fa-sun" onclick="mode('하양')"></i>
+                    <i class="fa-solid fa-moon" onclick="mode('검정')"></i>
+                </div>
+                <!-- 로그인 전 -->
+                <div class="member login_box">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">마이페이지</a>
+                    <a href="#">장바구니</a>
+                    <a href="#">배송조회</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">ABOUT US</a>
+                </div>
+                <!-- 로그인 후 -->
+                <div class="member logout_box">
+                    <a href="#">로그아웃</a>
+                    <a href="#">마이페이지</a>
+                    <a href="#">장바구니</a>
+                    <a href="#">배송조회</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">ABOUT US</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_middle">
+            <div class="center_box">
+                <h1>
+                    <a href="index.html">
+                        <i class="fa-solid fa-seedling"></i>
+                        <img src="images/logo.png" alt="로고">
+                    </a>
+                </h1>
+                
+                <div class="search_wrap">
+                    <form action="" method="">
+                        <fieldset>
+                            <legend>검색창</legend>
+                            <input type="text" placeholder="검색어를 입력해주세요">
+                            <button type="submit">
+                                <!-- <img src="images/search.png" alt="검색"> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="center_box">
+                <ul class="gnb">
+                    <li class="product"><a href="">제품</a>
+                        <ul class="lnb">
+                            <li><a href="sub_skincare.html">스킨케어</a>
+                                <ul class="lnb2">
+                                    <li><a href="#">스킨</a></li>
+                                    <li><a href="#">로션</a></li>
+                                    <li><a href="#">에센스/세럼</a></li>
+                                    <li><a href="#">페이스 오일</a></li>
+                                    <li><a href="#">마사지</a></li>
+                                    <li><a href="#">크림/젤</a></li>
+                                    <li><a href="#">립 케어</a></li>
+                                    <li><a href="#">아이 케어</a></li>
+                                    <li><a href="#">미스트</a></li>
+                                    <li><a href="#">기타</a></li>
+                                    <li><a href="#">대용량</a></li>
+                                    <li><a href="#">앰플 BEST 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">선케어</a></li>
+                            <li><a href="#">팩/마스크</a></li>
+                            <li><a href="#">페이스메이크업</a></li>
+                            <li><a href="#">컬러메이크업</a></li>
+                            <li><a href="#">클렌징</a></li>
+                            <li><a href="#">남성</a></li>
+                            <li><a href="#">바디</a></li>
+                            <li><a href="#">헤어</a></li>
+                            <li><a href="#">기획세트</a></li>
+                            <li><a href="#">네일</a></li>
+                            <li><a href="#">방향</a></li>
+                            <li><a href="#">미용소품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">특가</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="#">라이브</a></li>
+                    <li><a href="#">FOR U</a></li>
+                    <li class="type">
+                        <a href="#">라인별</a>
+                        <span></span>
+                        <a href="#">고민별</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="visual_sub">
+        <div class="center_box">
+            <div class="text_sub">스킨케어</div>
+        </div>
+    </div>
+
+    <ul class="snb">
+        <li class="on"><a href="#">전체</a></li>
+        <li><a href="#">스킨</a></li>
+        <li><a href="#">로션</a></li>
+        <li><a href="#">페이스 오일</a></li>
+        <li><a href="#">마사지 크림/젤</a></li>
+        <li><a href="#">립 케어</a></li>
+        <li><a href="#">아이 케어</a></li>
+        <li><a href="#">미스트</a></li>
+        <li><a href="#">기획 세트</a></li>
+        <li><a href="#">기타</a></li>
+        <li><a href="#">대용량</a></li>
+        <li><a href="#">앰플SET 3</a></li>
+    </ul>
+    
+    <div id="section_km">
+        <div id="section_sub">
+            <div class="center_box">
+                <div class="bread_box">
+                    <p>총<span>16개</span>의 상품이 있습니다.</p>
+                    <div class="type_list">
+                        <a href="#">추천순
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </a>
+                        <a href="#" class="tune">
+                            <span class="material-symbols-outlined">
+                                tune
+                            </span>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="prod_box_sub op">
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img1.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">화산송이 모공 토너 2X 200ml</a></li>
+                        <li class="price">16,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img2.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">비자 트러블 스킨 200ml</a></li>
+                        <li class="price">11,500원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img3.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">청보리 필링 토너 250ml</a></li>
+                        <li class="price">18,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img4.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">트루 판테놀 10 수분 스킨 260ml</a></li>
+                        <li class="price">72,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img5.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">그린티 씨드 스킨 160ml</a></li>
+                        <li class="price">15,750원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img6.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">그린티 밸런싱 스킨 200ml</a></li>
+                        <li class="price">13,500원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img7.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블루베리 리밸런싱 스킨 150ml</a></li>
+                        <li class="price">8,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img8.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">그린티 밸런싱 크림 7DAYS 5ml</a></li>
+                        <li class="price">1,575원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img9.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">그린티 밸런싱 스킨 7DAYS 10ml</a></li>
+                        <li class="price">1,275원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img10.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블랙티 유스 인행싱 스킨 케어 세트</a></li>
+                        <li class="price">35,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img11.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블루베리 리밸런싱 스킨 300ml</a></li>
+                        <li class="price">14,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img12.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블루베리 리밸런싱 스킨 [대용량] 500ml</a></li>
+                        <li class="price">20,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img13.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">포레스트 포맨 프리미엄 스킨 180ml</a></li>
+                        <li class="price">26,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img14.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블랙티 유스 인행싱 스킨 150ml</a></li>
+                        <li class="price">18,750원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img15.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">퍼펙트 9 인텐시브 스킨 200ml</a></li>
+                        <li class="price">23,100원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/skin_img16.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">제주 왕벚꽃 스킨 200ml</a></li>
+                        <li class="price">16,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="footer_km">
+        <div class="center_box">
+            <h1><a href="#"><img src="images/ft_logo.png" alt=""></a></h1>
+            <ul class="link_menu">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상정보처리기기 운영/관리 방침</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">임직원서비스</a></li>
+                <li><a href="#">이메일 주소 무단 수집 거부</a></li>
+            </ul>
+            <div class="addres">
+                <p>
+                    (주)이니스프리 서울특별시 용산구 한강대로 100(한강로2가) 7층 이니스프리 대표이사 : 최민정<br>
+                    사업자 등록번호 : 106-86-68127 | 통신판매신고번호 : 2018-서울용산-0014 | 제품 문의 : 080-380-0114 | FAX : 02-6040-7108<br>
+                    이메일 주소 : innisfree@innisfree.com | 비즈니스제휴/입점문의 : partner.biz@innisfree.com<br>
+                    개인정보 보호책임자 : 정구화 | 호스팅 서비스 제공자 : ㈜이니스프리
+                </p>
+                <p>
+                    저희 쇼핑몰은 고객님의 안전한 거래를 위해 무통장입금 거래에 대해 구매안전서비스를 적용하고 있습니다.<br>
+                    <a href="#">토스페이먼츠 구매안전 서비스 가입확인</a>
+                </p>
+                <p class="copyright">
+                    Copyright © 2019 Innisfree. All Rights Reserved.
+                </p>
+            </div>
+            <div class="call_box">
+                <span>고객 서비스 센터 이용안내</span>
+                <strong>080-380-0114</strong>
+                <em>운영시간 09:00 ~ 18:00 (주말 및 공휴일 휴무)<br>
+                    점심시간 12:00 ~ 13:00</em>
+            </div>
+            <button>1:1 상담하러 가기</button>
+        </div>
+    </div>
+
+
+
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/innisfree.js"></script>
+    <script src="script/skrollr.js"></script>
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+
+    <script>
+        var s = AOS.init();
+        // var s = skrollr.init();
+    </script>
+
+    <script>
+        // 팝업창 닫기 (쿠키 삭제)
+        if(document.cookie.indexOf('merong') > -1){
+            $('#popup').hide();
+        }
+
+        function cookieMake(){
+            var today = new Date;
+            var date = today.getDate();
+            var delDate = date + 7; //삭제날짜
+            today.setDate(delDate)
+
+            var cookiePopup = '';
+            cookiePopup += 'kmPopup = merong; expires = ' + today
+
+            document.cookie = cookiePopup;
+
+            $('#popup').hide();
+        }
+
+        $('.close').click(function(){
+            $('#popup').hide();
+        })
+
+        // 다크모드
+        if(document.cookie.indexOf('검정') > -1){
+            dark ()
+        }
+        // 라이트모드
+        if(document.cookie.indexOf('하양') > -1){
+            light ()
+        }
+
+        function mode(color){
+            // if(color == '검정'){
+            //     dark()
+            // }
+            // if(color == '하양'){
+            //     light()
+            // }
+            (color == '검정')?dark():light();
+        }
+
+        function dark(){
+            document.cookie = bodyColor = '검정';
+            $('body').addClass('dark');
+            $('.fa-moon').hide();
+            $('.fa-sun').show();
+        }
+        function light(){
+            document.cookie = bodyColor = '하양';
+            $('body').removeClass('dark');
+            $('.fa-sun').hide();
+            $('.fa-moon').show();
+        }
+    </script>
+</body>
+</html>

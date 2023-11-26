@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울아산병원사이트</title>
+        
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- js -->
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script src="script/hospital.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="center_box">
+            <h1>
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </h1>
+
+            <div class="hambuger material-symbols-outlined mo">
+                menu
+            </div>
+
+            <div class="m_search material-symbols-outlined mo">
+                search
+            </div>
+
+            <div class="lang">
+                <a href="#" class="lang_select">
+                    <i>LANGUAGE</i>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </a>
+                
+                <ul>
+                    <li><a href="#">KOREAN</a></li>
+                    <li><a href="#">ENGLISH</a></li>
+                    <li><a href="#">CHINESE</a></li>
+                    <li><a href="#">ARABIC</a></li>
+                    <li><a href="#">MONGOLIAN</a></li>
+                    <li><a href="#">JAPANESE</a></li>
+                </ul>
+
+            </div>
+            <div class="topmenu">
+                <a href="#">로그인<span class="material-symbols-outlined">login</span></a>
+                <a href="#">회원가입<span class="material-symbols-outlined">
+                    heart_plus
+                    </span></a>
+                <a href="#" class="btn_search material-symbols-outlined">search</a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="sub1_1.html">의료진/진료과</a>
+                    <ul class="lnb">
+                        <li><a href="sub1_1.html">의료진</a></li>
+                        <li><a href="sub1_1.html">진료과</a></li>
+                        <li><a href="sub1_1.html">암병원</a></li>
+                        <li><a href="sub1_1.html">어린이병원</a></li>
+                        <li><a href="sub1_1.html">심장병원</a></li>
+                        <li><a href="sub1_1.html">센터</a></li>
+                        <li><a href="sub1_1.html">클리닉</a></li>
+                        <li><a href="sub1_1.html">아산생명연구원</a></li>
+                        <li><a href="sub1_1.html">기타</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub7_1.html">진료예약/안내</a>
+                    <ul class="lnb">
+                        <li><a href="#">병원안내</a>
+                            <ul class="lnb2">
+                                <li><a href="sub7_1.html">오시는길</a></li>
+                                <li><a href="sub7_1.html">주차안내</a></li>
+                                <li><a href="sub7_1.html">둘러보기</a></li>
+                                <li><a href="sub7_1.html">편의시설</a></li>
+                                <li><a href="sub7_1.html">전화번호안내</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">외래진료안내</a>
+                            <ul class="lnb2">
+                                <li><a href="sub7_2.html">진료예약</a></li>
+                                <li><a href="sub7_2.html">진료절차</a></li>
+                                <li><a href="sub7_2.html">진료안내</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">응급진료안내</a>
+                            <ul class="lnb2">
+                                <li><a href="sub7_1.html">진료안내</a></li>
+                                <li><a href="sub7_2.html">응급증상</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">입원진료안내</a>
+                            <ul class="lnb2">
+                                <li><a href="sub7_1.html">입원진료절차안내</a></li>
+                                <li><a href="sub7_2.html">병문안안내</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">가정간호안내</a>
+                            <ul class="lnb2">
+                                <li><a href="sub1_1.html">가정간호란</a></li>
+                                <li><a href="sub1_1.html">신청안내</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">검사실안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub7_2.html">건강정보</a>
+                    <ul class="lnb">
+                        <li><a href="sub7_1.html">의료정보</a></li>
+                        <li><a href="sub7_1.html">건강TV</a></li>
+                        <li><a href="sub7_1.html">헬스에디터</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub1_1.html">고객서비스</a>
+                    <ul class="lnb">
+                        <li><a href="sub7_2.html">발급안내</a></li>
+                        <li><a href="sub7_2.html">고객서비스</a></li>
+                        <li><a href="sub7_2.html">이용문의</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub7_1.html">의학교육</a>
+                    <ul class="lnb">
+                        <li><a href="sub7_1.html">학술행사일정</a></li>
+                        <li><a href="sub7_1.html">학술영상다시보기</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub7_2.html">병원이야기</a>
+                    <ul class="lnb">
+                        <li><a href="sub7_1.html">리얼스토리</a></li>
+                        <li><a href="sub7_2.html">사회공헌</a></li>
+                        <li><a href="sub7_1.html">후원</a></li>
+                        <li><a href="sub7_2.html">자원봉사</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub7_2.html">병원소개</a>
+                    <ul class="lnb">
+                        <li><a href="#">재단소개</a>
+                            <ul class="lnb2">
+                                <li><a href="sub7_1.html">설립자소개</a></li>
+                                <li><a href="sub7_1.html">이사장인사말</a></li>
+                                <li><a href="sub7_1.html">설립취지</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">병원소개</a>
+                            <ul class="lnb2">
+                                <li><a href="sub7_1.html">병원장인사말</a></li>
+                                <li><a href="sub7_2.html">병원안내</a></li>
+                                <li><a href="sub7_1.html">서울아산병원 30년사</a></li>
+                                <li><a href="sub7_2.html">미션/비전</a></li>
+                                <li><a href="sub7_1.html">안전경영</a></li>
+                                <li><a href="sub7_2.html">연혁/의료성과/의료진동정</a></li>
+                                <li><a href="sub7_1.html">현황</a></li>
+                                <li><a href="sub7_2.html">기구조직</a></li>
+                                <li><a href="sub7_1.html">협력기관</a></li>
+                                <li><a href="sub7_2.html">CI</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">소식</a>
+                            <ul class="lnb2">
+                                <li><a href="#">소식/공지</a></li>
+                                <li><a href="#">주요뉴스</a></li>
+                                <li><a href="#">채용안내</a></li>
+                                <li><a href="#">입찰공고</a></li>
+                                <li><a href="#">강좌안내</a></li>
+                                <li><a href="#">갤러리</a></li>
+                                <li><a href="#">재단산하병원 구인정보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">정기행간물</a>
+                            <ul class="lnb2">
+                                <li><a href="#">병원신문</a></li>
+                                <li><a href="#">건강정보메일</a></li>
+                                <li><a href="#">홍보책자</a></li>
+                                <li><a href="#">연보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">교육장안내</a>
+                            <ul class="lnb2">
+                                <li><a href="#">시설안내</a></li>
+                                <li><a href="#">대관내규</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="lnb_bg">
+                <div class="like_menu">
+                    <h2>로그인 하시면 더욱 다양한 혜택을 이용하실 수 있습니다.</h2>
+                    <a href="#">로그인</a>
+                    <a href="#">나의차트</a>
+                    <a href="#">진료예약</a>
+                    <a href="#">병원둘러보기</a>
+                    <a href="#">오시는길</a>
+                </div>
+            </div>
+
+            <div id="search_wrap">
+                <form action="">
+                    <fieldset>
+                        <legend>검색</legend>
+                        <input type="text" placeholder="찾으시는 단어를 입력해주세요." name="" class="search_keyword">
+                        <button type="button" class="btn_search2" onclick="checkKeyword()">
+                            <span class="material-symbols-outlined">
+                                search</span>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="m_modal mo">
+        <div class="sidemenu">
+            <div class="m_linktop">
+                <a href="#">KOREAN</a>
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+
+            <ul class="m_gnb">
+            </ul>
+
+            <div class="m_btn_close material-symbols-outlined">
+                close
+            </div>
+        </div>
+    </div>
+
+
+    <div id="visual_sub">
+        <div id="visual_sub">
+            <div class="text_sub">
+                <strong>병원소개</strong>
+                <span>HOSPITAL INTRODUCTION</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="section_sub">
+        <div class="snb_box">
+            <ul class="snb">
+                <li><a href="#">재단소개</a></li>
+                <li class="on"><a href="#">병원소개</a></li>
+                <li><a href="#">소식</a></li>
+                <li><a href="#">정기행간물</a></li>
+                <li><a href="#">교육장안내</a></li>
+            </ul>
+            <ul class="s_lnb">
+                <li class="on"><a href="sub7_1.html">병원장인사말</a></li>
+                <li><a href="sub7_2.html">병원안내</a></li>
+                <li><a href="#">서울아산병원 30년사</a></li>
+                <li><a href="#">미션/비전</a></li>
+                <li><a href="#">안전경영</a></li>
+                <li><a href="#">연혁및성과/의료진동정</a></li>
+                <li><a href="#">현황</a></li>
+                <li><a href="#">기구조직</a></li>
+                <li><a href="#">협력기관</a></li>
+                <li><a href="#">CI</a></li>
+            </ul>
+        </div>
+
+        <article>
+            <h2>병원장인사말</h2>
+            <div class="content_box autoHeight">
+               <div class="left_box">
+                    <figure><img src="images/sub7_2_img.png" alt=""></figure>
+                    <span>서울아산병원장</span>
+                    <strong>박승일</strong>
+               </div>
+               <div class="right_box">
+                    <h3>‘16년 연속 대한민국에서 가장 존경받는 병원’</h3>
+                    <p>
+                        서울아산병원의 모태는 1977년 아산 정주영 현대그룹 회장이 사재를 들여 설립한
+                        ‘아산사회복지재단’입니다. 우리 사회에 ‘복지’라는 개념조차 생소하던 시절 아산재단은
+                        사회복지사업, 장학사업, 학술연구사업, 의료사업 등 다양한 복지사업을 추진했는데
+                        그중에서도 가장 중점적으로 전개한 것이 ‘의료사업’입니다. 아산재단은 누구나 평등하게
+                        의료 혜택을 받을 수 있도록 전국 무의촌 지역에 병원을 설립했습니다.
+                        그리고 지역 아산병원의 모병원이자 한국 의료 수준을 향상시킬 세계적 수준의 병원을
+                        만들겠다는 목표로 1989년 6월 23일 서울아산병원을 세웠습니다.
+                    </p>
+                    <p>
+                        서울아산병원은 ‘끊임없는 도전과 열정으로 높은 수준의 진료, 교육, 연구를 성취함으로써
+                        인류의 건강한 삶에 기여한다’는 미션을 위해 모든 역량을 집중해왔습니다. 그 결과 불과
+                        20여 년 만에 기존 치료법의 한계를 극복한 새로운 치료법들이 이곳에서 개발되었으며
+                        환자의 마음까지 살피는 인술로 16년 연속 대한민국에서 가장 존경받는 병원에도
+                        선정되었습니다.
+                    </p>
+                    <p>
+                        현재 서울아산병원은 환자 안전과 의료 질 향상을 위한 상시 위기 대응 시스템과 자체 의료질
+                        평가 기준을 갖추고 병원의 모든 프로세스를 환자 중심으로 혁신하는 한편 환자 경험을
+                        진료에 접목한 의료서비스로 격이 다른 서울아산병원만의 문화를 만들고 있습니다.
+                    </p>
+                    <p>
+                        서울아산병원은 앞으로도 의료의 학문적 발전과 임상 진료 수준의 향상을 위해 새로운 도전에
+                        주저하지 않고, 앞선 의술 더 큰 사랑을 실천하며 대한민국 의료를 선도하는 병원, 누구에게나
+                        가장 신뢰받는 병원이 되기 위해 최선을 다할 것을 약속드립니다.
+                    </p>
+               </div>
+                
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div class="center_box autoHeight">
+            <ul class="linkmenu">
+                <li><a href="#">환자권리장전</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">의료정보운영방침</a></li>
+                <li><a href="#">비급여진료비</a></li>
+                <li><a href="#">의무기록사본발급안내</a></li>
+                <li><a href="#">위변조문서확인</a></li>
+                <li><a href="#">이메일주소수집거부</a></li>
+                <li><a href="#">원격지원서비스</a></li>
+                <li><a href="#">홈페이지이용문의</a></li>
+            </ul>
+            <h1>
+                <a href="index.html">
+                    <img src="images/footer_logo.png" alt="footer_logo">
+                </a>
+            </h1>
+            <ul class="famliy_site">
+                <li class="famliy01">
+                    <a href="#">진료과</a>
+                    <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+                    <ul class="fs_list">
+                        <li><a href="#">가정의학과</a></li>
+                        <li><a href="#">간담도췌외과</a></li>
+                        <li><a href="#">간이식ㆍ간담도외과</a></li>
+                        <li><a href="#">감염내과</a></li>
+                        <li><a href="#">건강의학과</a></li>
+                        <li><a href="#">구강악안면외과</a></li>
+                        <li><a href="#">내과</a></li>
+                        <li><a href="#">노년내과</a></li>
+                        <li><a href="#">대장항문외과</a></li>
+                        <li><a href="#">류마티스내과</a></li>
+                        <li><a href="#">마취통증의학과</a></li>
+                        <li><a href="#">방사선종양학과</a></li>
+                        <li><a href="#">병리과</a></li>
+                        <li><a href="#">비뇨의학과</a></li>
+                        <li><a href="#">산부인과</a></li>
+                        <li><a href="#">성형외과</a></li>
+                        <li><a href="#">소화기내과</a></li>
+                        <li><a href="#">수부외과</a></li>
+                        <li><a href="#">신ㆍ췌장이식외과</a></li>
+                        <li><a href="#">신경과</a></li>
+                        <li><a href="#">신경외과</a></li>
+                        <li><a href="#">신장내과</a></li>
+                        <li><a href="#">심장내과</a></li>
+                        <li><a href="#">심장외과</a></li>
+                        <li><a href="#">안과</a></li>
+                        <li><a href="#">알레르기내과</a></li>
+                        <li><a href="#">영상의학과</a></li>
+                        <li><a href="#">위장관외과</a></li>
+                        <li><a href="#">유방외과</a></li>
+                        <li><a href="#">응급의학과</a></li>
+                        <li><a href="#">이비인후과</a></li>
+                        <li><a href="#">임상약리학과</a></li>
+                        <li><a href="#">재활의학과</a></li>
+                        <li><a href="#">정신건강의학과</a></li>
+                        <li><a href="#">정형외과</a></li>
+                        <li><a href="#">종양내과</a></li>
+                        <li><a href="#">중환자ㆍ외상외과</a></li>
+                        <li><a href="#">진단검사의학과</a></li>
+                        <li><a href="#">치과</a></li>
+                        <li><a href="#">치과교정과</a></li>
+                        <li><a href="#">치아보존과</a></li>
+                        <li><a href="#">치아보철과</a></li>
+                        <li><a href="#">폐식도외과</a></li>
+                        <li><a href="#">피부과</a></li>
+                        <li><a href="#">핵의학과</a></li>
+                        <li><a href="#">혈관외과</a></li>
+                        <li><a href="#">혈액내과</a></li>
+                        <li><a href="#">호흡기내과</a></li>
+                        <li><a href="#">흉부외과</a></li>
+                        <li><a href="#">-----------암병원-----------</a></li>
+                        <li><a href="#">CAR T 센터</a></li>
+                        <li><a href="#">간암센터</a></li>
+                        <li><a href="#">뇌종양센터</a></li>
+                        <li><a href="#">담도 및 췌장암센터</a></li>
+                        <li><a href="#">대장암센터</a></li>
+                        <li><a href="#">두경부암센터</a></li>
+                        <li><a href="#">부인암센터</a></li>
+                        <li><a href="#">비뇨기암센터</a></li>
+                        <li><a href="#">식도암센터</a></li>
+                        <li><a href="#">암환자라이프케어센터</a></li>
+                        <li><a href="#">완화의료센터</a></li>
+                        <li><a href="#">위암센터</a></li>
+                        <li><a href="#">유방암센터</a></li>
+                        <li><a href="#">유전체맞춤암치료센터</a></li>
+                        <li><a href="#">육종ㆍ희귀암센터</a></li>
+                        <li><a href="#">폐암센터</a></li>
+                        <li><a href="#">피부암센터</a></li>
+                        <li><a href="#">혈액암 및 골수이식센터</a></li>
+                        <li><a href="#">---------어린이병원---------</a></li>
+                        <li><a href="#">소아감염과</a></li>
+                        <li><a href="#">소아내분비대사과</a></li>
+                        <li><a href="#">소아마취통증의학과</a></li>
+                        <li><a href="#">소아비뇨의학과</a></li>
+                        <li><a href="#">소아소화기영양과</a></li>
+                        <li><a href="#">소아신경과</a></li>
+                        <li><a href="#">소아신경외과</a></li>
+                        <li><a href="#">소아신장과</a></li>
+                        <li><a href="#">소아심장외과</a></li>
+                        <li><a href="#">소아안과</a></li>
+                        <li><a href="#">소아영상의학과</a></li>
+                        <li><a href="#">소아외과</a></li>
+                        <li><a href="#">소아재활의학과</a></li>
+                        <li><a href="#">소아전문응급센터</a></li>
+                        <li><a href="#">소아정신건강의학과</a></li>
+                        <li><a href="#">소아정형외과</a></li>
+                        <li><a href="#">소아중환자과</a></li>
+                        <li><a href="#">소아천식아토피센터</a></li>
+                        <li><a href="#">암센터</a></li>
+                        <li><a href="#">심장과</a></li>
+                        <li><a href="#">종양혈액과</a></li>
+                        <li><a href="#">소아치과</a></li>
+                        <li><a href="#">소아호흡기알레르기과</a></li>
+                        <li><a href="#">신생아과</a></li>
+                        <li><a href="#">의학유전학과</a></li>
+                        <li><a href="#">척추측만증센터</a></li>
+                        <li><a href="#">----------심장병원----------</a></li>
+                        <li><a href="#">심장병원</a></li>
+                        <li><a href="#">대동맥질환센터</a></li>
+                        <li><a href="#">말초혈관질환센터</a></li>
+                        <li><a href="#">심방세동센터</a></li>
+                        <li><a href="#">심부전/심장이식센터</a></li>
+                        <li><a href="#">심장병예방재활센터</a></li>
+                        <li><a href="#">심장영상센터</a></li>
+                        <li><a href="#">판막질환센터</a></li>
+                        <li><a href="#">협심증심근경색증센터</a></li>
+                    </ul>
+                </li>
+                <li class="famliy02">
+                    <a href="#">재단 및 재단산하병원</a>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <ul class="fs_list">
+                        <li><a href="#">아산사회복지재단</a></li>
+                        <li><a href="#">강릉아산병원</a></li>
+                        <li><a href="#">금강아산병원</a></li>
+                        <li><a href="#">보성아산병원</a></li>
+                        <li><a href="#">보령아산병원</a></li>
+                        <li><a href="#">영덕아산병원</a></li>
+                        <li><a href="#">정읍아산병원</a></li>
+                        <li><a href="#">홍천아산병원</a></li>
+                    </ul>
+                </li>
+                <li class="famliy03">
+                    <a href="#">센터/클리닉/연구원/기타</a>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <ul class="fs_list">
+                        <li><a href="#">-----------센터------------</a></li>
+                        <li><a href="#">간센터</a></li>
+                        <li><a href="#">건강증진센터</a></li>
+                        <li><a href="#">국제진료센터</a></li>
+                        <li><a href="#">뇌졸중센터</a></li>
+                        <li><a href="#">담도ㆍ췌장센터</a></li>
+                        <li><a href="#">당뇨병센터</a></li>
+                        <li><a href="#">로봇수술센터</a></li>
+                        <li><a href="#">로봇수술트레이닝센터</a></li>
+                        <li><a href="#">선천성심장병센터</a></li>
+                        <li><a href="#">소화기내시경센터</a></li>
+                        <li><a href="#">스트레스심리상담센터</a></li>
+                        <li><a href="#">스포츠건강의학센터</a></li>
+                        <li><a href="#">염증성장질환센터</a></li>
+                        <li><a href="#">응급의료센터</a></li>
+                        <li><a href="#">의학유전학센터</a></li>
+                        <li><a href="#">임플란트센터</a></li>
+                        <li><a href="#">장기이식센터</a></li>
+                        <li><a href="#">전립선센터</a></li>
+                        <li><a href="#">진료협력센터</a></li>
+                        <li><a href="#">천식ㆍCOPD센터</a></li>
+                        <li><a href="#">태아치료센터</a></li>
+                        <li><a href="#">폐고혈압ㆍ정맥혈전센터</a></li>
+                        <li><a href="#">----------클리닉----------</a></li>
+                        <li><a href="#">남성건강클리닉</a></li>
+                        <li><a href="#">뇌전증클리닉</a></li>
+                        <li><a href="#">대장항문클리닉</a></li>
+                        <li><a href="#">마르판클리닉</a></li>
+                        <li><a href="#">생식의학 및 불임클리닉</a></li>
+                        <li><a href="#">노아당뇨클리닉</a></li>
+                        <li><a href="#">신경중재클리닉</a></li>
+                        <li><a href="#">엑시머라식클리닉</a></li>
+                        <li><a href="#">유방암클리닉</a></li>
+                        <li><a href="#">인공와우클리닉</a></li>
+                        <li><a href="#">코성형클리닉</a></li>
+                        <li><a href="#">----아산생명과학연구원----</a></li>
+                        <li><a href="#">R&D사업단</a></li>
+                        <li><a href="#">빅데이터연구센터</a></li>
+                        <li><a href="#">세포치료센터</a></li>
+                        <li><a href="#">아산생명과학연구원</a></li>
+                        <li><a href="#">융합연구지원센터</a></li>
+                        <li><a href="#">의공학연구소</a></li>
+                        <li><a href="#">의생명연구소</a></li>
+                        <li><a href="#">임상시험센터</a></li>
+                        <li><a href="#">임상연구보호센터</a></li>
+                        <li><a href="#">임상의학연구소</a></li>
+                        <li><a href="#">조직세포자원센터</a></li>
+                        <li><a href="#">-----------기타-----------</a></li>
+                        <li><a href="#">AMC동문회</a></li>
+                        <li><a href="#">간호부</a></li>
+                        <li><a href="#">교육수련실</a></li>
+                        <li><a href="#">방사선안전관리실</a></li>
+                        <li><a href="#">시뮬레이션센터</a></li>
+                        <li><a href="#">아산원우회</a></li>
+                        <li><a href="#">아카데미</a></li>
+                        <li><a href="#">약제팀</a></li>
+                        <li><a href="#">영상의학팀</a></li>
+                        <li><a href="#">의공팀</a></li>
+                        <li><a href="#">의학통계학과</a></li>
+                        <li><a href="#">임상연구심의위원회</a></li>
+                        <li><a href="#">장례식장</a></li>
+                        <li><a href="#">중증외상팀</a></li>
+                        <li><a href="#">중환자실</a></li>
+                    </ul>
+                </li>
+                <li class="famliy04">
+                    <a href="#">관련기관</a>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <ul class="fs_list">
+                        <li><a href="#">아산생명과학연구원</a></li>
+                        <li><a href="#">울산대학교의과대학</a></li>
+                        <li><a href="#">의학도서관</a></li>
+                        <li><a href="#">스마트아카데미</a></li>
+                        <li><a href="#">아산의료원 연보</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="banner">
+                <a href="#"><img src="images/ban01.png" alt=""></a>
+                <a href="#"><img src="images/ban02.png" alt=""></a>
+                <a href="#"><img src="images/ban03.png" alt=""></a>
+                <a href="#"><img src="images/ban04.png" alt=""></a>
+            </div>
+            <p>
+                (05505) 서울특별시 송파구 올림픽로 43길 88 서울아산병원 / TEL 1688-7575 / webmaster@amc.seoul.kr</p>
+            <p>
+                Copyright@2014 by Asan Medical Center. All Rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

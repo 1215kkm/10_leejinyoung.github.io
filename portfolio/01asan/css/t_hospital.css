@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+body {overflow-x: hidden; background: #f5f5f5;}
+
+
+.pc {display: none;}
+.mo {display: block;}
+
+.skipmenu {display: none;}
+header .lang {display: none;}
+header .topmenu {display: none;}
+header .gnb {display: none;}
+header .lnb_bg {display: none;}
+header #search_wrap {display: none;}
+header .search_modal {display: none;}
+.go_top {display: none;}
+footer .linkmenu {display: none;}
+footer .famliy_site {display: none;}
+footer .banner {display: none;}
+
+
+/* header */
+header {width: 100%; height: 60px;}
+
+header h1 {width: 140px; height: 38px; position: absolute; left: 50%; transform: translateX(-50%);}
+header h1 img {width: 100%; margin-top: 8px;}
+
+header .hambuger {width: 28px; height: 28px; background: #f69e1f; float: left; margin: 16px 0 0 14px; color: #fff; text-align: center; padding-top: 2px; box-sizing: border-box;}
+
+header .m_search {width: 28px; height: 28px; background: #f69e1f; float: right; margin: 16px 14px 0 0; color: #fff; text-align: center; padding-top: 2px; box-sizing: border-box;}
+
+
+
+/* visual */
+#visual {position: relative;}
+#visual img {width: 100%;}
+
+#visual .text_box {width: 400px; height: 100%; background: #57a09f; position: absolute; right: 0; bottom: 0; padding: 14px; box-sizing: border-box; color: #fff; word-break: keep-all; display: flex; justify-content: center; align-items: left; flex-direction: column; padding-left: 40px;}
+
+#visual .text_box p {font-size: 40px; color: #fff; font-weight: 200; word-break: keep-all; line-height: 60px; letter-spacing: 2px;}
+
+#visual .text_box span {display: block; font-size: 50px; color: #fff; font-weight: bold; margin-top: 10px; letter-spacing: 2px;}
+
+#visual .text_box .link_box a {width: 120px; height: 50px; line-height: 50px; float: left; border: 1px solid #fff; text-align: center; color: #fff; font-size: 18px; background: #427d7c; transition: 0.1s; margin-top: 30px;}
+#visual .text_box .link_box a:last-child {background: #224948; margin-left: -1px;}
+#visual .text_box .link_box a:hover {background: #fff; color: #000;}
+
+
+/* section1 */
+#section01 .tit_box {height: 50px; margin: 0 auto 40px auto; text-align: center; font-size: 0;}
+
+#section01 .tit_box li {display: inline-block; height: 50px; line-height: 50px; font-size: 24px; font-weight: bold; position: relative; padding: 0 40px;}
+#section01 .tit_box li::after {content: ''; position: absolute; width: 6px; height: 6px; background: #555; right: -3px; top: 22px;}
+#section01 .tit_box li:last-child:after {display: none;}
+
+#section01 .tit_box li a {display: block; color: #777;}
+
+#section01 .tit_box li.on a {color: #000; border-bottom: 3px solid #00696d;}
+
+
+#section01 .article {margin-top: 10px; background: #fff;}
+
+#section01 .article > ul {display: none;}
+#section01 .article > ul.notice_box {display: block;}
+
+#section01 .article li {border-bottom: 1px solid #eee; padding: 18px; color: #777; font-size: 14px; position: relative;}
+
+#section01 .article li span {display: inline-block; height: 40px; line-height: 40px;}
+#section01 .article li h3 {height: 28px; font-size: 18px; color: #222;}
+#section01 .article li a {position: absolute; width: 100%; height: 100%; top: 0; left: 0; font-size: 0;}
+
+
+
+/* section02 */
+#section02 {height: 240px; position: relative;}
+
+#section02 .baro1 {margin-top: 40px;}
+
+#section02 .baro1 li {width: 33.333%; height: 120px; background: #316969; float: left; text-align: center; border-right: 1px solid #467878; border-bottom: 1px solid #467878; box-sizing: border-box;}
+#section02 .baro1 li:nth-child(3n) {border-right: none;}
+
+#section02 .baro1 li a {color: #fff;}
+
+#section02 .baro1 li a figure {width: 46px; height: 46px; margin: 20px auto 5px auto;}
+#section02 .baro1 li a figure img {width: 100%;}
+
+#section02 .baro1 li a h3 {font-size: 16px; font-weight: normal;}
+
+#section02 .baro1 li a p {display: none;}
+
+
+#section02 .call {position: absolute; right: 0; bottom: 0; width: 33.333%; height: 120px; background: #224948; text-align: center;}
+
+#section02 .call a {color: #fff;}
+
+#section02 .call a figure {width: 46px; height: 46px; margin: 20px auto 5px auto;}
+#section02 .call a figure img {width: 100%;}
+
+#section02 .call a h3 {font-size: 16px; font-weight: normal; color: #ffff7d; width: 100%; text-align: center; letter-spacing: -1px;}
+
+#section02 .call a p {font-size: 14px; color: #fff;}
+
+
+
+/* section03 */
+#section03 {padding: 0 18px 60px 18px;}
+#section03 h2 {width: 100%; height: 60px; line-height: 60px; margin-top: 30px; text-align: center; font-size: 16px; color: #222;}
+
+#section03 .box_wrap {height: auto; text-align: center; padding-bottom: 14px; box-sizing: border-box;}
+#section03 .box_wrap:after {content: ''; clear: both; display: block;}
+
+#section03 .box_wrap > li {width: 100%; padding: 0 15px 10px 15px; background: #fff; box-sizing: border-box; position: relative; margin-bottom: 10px;}
+
+#section03 .box_wrap li h3 {width: 100%; height: 50px; line-height: 50px; font-size: 16px;}
+
+#section03 .box_wrap ul {font-size: 0;}
+#section03 .box_wrap ul > li {width: calc(50% - 2.5px); height: 40px; line-height: 40px; background: #f69e1f; display: inline-block; margin-right: 5px; margin-bottom: 5px; font-size: 14px; position: relative;}
+#section03 .box_wrap ul li:nth-child(2n) {margin-right: 0;}
+
+
+#section03 .box_wrap ul li a {position: absolute; width: 100%; height: 100%; left: 0; top: 0; color: #fff; }
+
+#section03 .box_wrap li.iconbox {padding: 0;}
+
+#section03 .box_wrap li.iconbox h3 {border-bottom: 1px solid #ddd;}
+
+#section03 .box_wrap li.iconbox ul {height: 120px; display: flex; justify-content: space-between; align-items: center;}
+#section03 .box_wrap li.iconbox ul li {height: 120px; margin-right: 0; margin-bottom: 0; background: none; border-right: 1px solid #ddd;}
+#section03 .box_wrap li.iconbox ul li:last-child {border-right: none;}
+
+#section03 .box_wrap li.iconbox figure {width: 100%; height: 50px; line-height: 50px; margin-top: 15px;}
+#section03 .box_wrap li.iconbox figure img {width: 50px;}
+
+#section03 .box_wrap li.iconbox li span {display: block; width: 100%; line-height: 18px; text-align: center; word-break: keep-all; color: #333; font-size: 14px; margin-top: 5px;}
+
+#section03 .box2 li:last-child {width: 100%;}
+
+
+/* footer */
+footer {height: 160px; background: #57a09f; padding: 20px 18px;}
+footer .center_box {width: 100%;}
+footer h1 {text-align: center; margin-top: 20px;}
+footer p {text-align: center; margin-top: 10px; color: #fff; font-size: 14px;}
+
+
+/* sidemenu */
+.m_modal {width: 100%; height: 100%; position: fixed; z-index: 1; left: 0; top: 0; background: rgba(0, 0, 0, 0.6); display: none;}
+
+.sidemenu {width: 270px; height: 100%; background: #fff; overflow: auto; position: absolute; left: -100%; transition: 0.4s;}
+.sidemenu.on {left: 0;}
+
+.sidemenu .m_linktop {width: 100%; height: 40px; border-bottom: 1px solid #ddd; background: #ededed;}
+.sidemenu .m_linktop a {float: left; width: 33.333%; height: 40px; line-height: 40px;text-align: center; border-right: 1px solid #d5d5d5; box-sizing: border-box;}
+.sidemenu .m_linktop a:last-child {border-right: 0;}
+
+.sidemenu .m_gnb {width: 234px; margin: 0 auto;}
+
+.sidemenu .m_gnb > li {width: 100%; line-height: 49px; border-bottom: 1px solid #ddd; font-size: 18px; text-indent: 15px; position: relative;}
+.sidemenu .m_gnb > li::before {content: ''; position: absolute; width: 7px; height: 7px; border-radius: 50%; background: #57a09f; left: 0; top: 21px;}
+
+.sidemenu .m_gnb > li > a {color: #121347; display: block;}
+
+
+.sidemenu .m_gnb li .lnb {background: #57a09f; display: none;}
+
+.sidemenu .m_gnb li .lnb li {border-bottom: 1px solid #00696d; text-indent: 24px; position: relative;}
+
+.sidemenu .m_gnb li .lnb li a {color: #fff; display: block;}
+
+.sidemenu .m_gnb li .lnb .lnb2 {background: #f5f5f5;}
+.sidemenu .m_gnb li .lnb .lnb2 li {height: 40px; line-height: 40px; font-size: 16px; border-bottom: 1px solid #ddd; position: relative;}
+.sidemenu .m_gnb li .lnb .lnb2 li::before {content: ''; position: absolute; width: 5px; height: 2px;  background: #57a09f; left: 6px; top: 18px;}
+.sidemenu .m_gnb li .lnb .lnb2 li a {color: #333;}
+
+
+.m_btn_close {width: 28px; height: 28px; border: 1px solid #fff; background: rgba(0, 0, 0, 0.8); position: fixed; z-index: 8; left: 280px; top: 10px; color: #fff; text-align: center; padding-top: 1px; box-sizing: border-box;}

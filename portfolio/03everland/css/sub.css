@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+
+/* sub page */
+
+#visual_sub {width: 100%; height: 320px; background: url('../images/sub_main.jpg') top no-repeat; background-size: cover; position: relative;}
+/* #visual_sub .text_box {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -20%); font-size: 40px;} */
+
+
+.sub_section .bread_box {width: 100%; height: 50px; background: #2367B0; position: relative;}
+.sub_section .bread_box::before {content: ''; position: absolute; left: 0; width: 100%; height: 50px; background: #004DA0}
+
+.sub_section .bread_box ul {max-width: 1580px; height: 50px; margin: 0 auto; position: relative;}
+.sub_section .bread_box ul::before {content: ''; width: 300px; height: 50px; position: absolute; left: 0;background: #004DA0;}
+.sub_section .bread_box ul li {width: 260px; height: 50px; line-height: 50px; float: left; font-size: 18px; text-align: center; border-right: 1px solid #2367B0; background: #6594C8;}
+.sub_section .bread_box ul li.home {width: 50px; background: #2367B0; margin-left: 300px; border-left: none;}
+.sub_section .bread_box ul li.home a {display: block; padding-top: 3px; box-sizing: border-box;}
+
+.sub_section .bread_box ul li a {display: block; color: #fff;}
+
+
+.sub_section .content_box {max-width: 1580px; margin: 0 auto;}
+
+.sub_section .submenu {float: left; width: 300px; text-align: center; border-right: 1px solid #ddd; padding-left: 20px; padding-right: 40px; box-sizing: border-box;}
+
+.sub_section .submenu h2 {width: 100%; height: 120px; line-height: 120px; font-size: 32px; text-align: center; border-bottom: 2px solid #333; font-weight: normal;}
+
+.sub_section .snb li {height: 60px; line-height: 60px; border-bottom: 1px solid #ddd; font-size: 18px; text-align: left; text-indent: 30px; position: relative;}
+.sub_section .snb li::before {content: ''; position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #555; left: 10px; top: 28px;}
+.sub_section .snb li a {display: block;}
+.sub_section .snb li.on {text-indent: 25px; font-weight: bold;}
+.sub_section .snb li.on.before {width: 13px; background: #000;}
+
+.sub_section .snb li.hover {text-indent: 40px; background: #004DA0;}
+.sub_section .snb li.hover a {color: #fff;}
+.sub_section .snb li.hover.before {width: 20px;}
+
+
+.sub_section .content {float: left; width: 70%; padding-left: 5%; padding-bottom: 120px; box-sizing: border-box;}
+
+.sub_section .content h3 {margin-top: 80px; font-size: 32px; font-weight: normal; position: relative; display: inline-block;}
+.sub_section .content h3:before {content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 20px; background: #FCCF00; z-index: -1;}
+
+.sub_section .content ul li {margin-top: 60px;}
+.sub_section .content ul li strong {font-size: 24px; display: block; text-indent: 10px; position: relative; color: #333;}
+.sub_section .content ul li strong::before {content: ''; position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #555; left: -10px; top: 12px;}
+.sub_section .content ul li p {font-size: 22px; margin-top: 10px; padding-left: 10px;}
+

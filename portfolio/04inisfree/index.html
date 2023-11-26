@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이니스프리</title>
+    <link rel="stylesheet" href="css/innisfree.css">
+    
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- 포털사이트에 노출되는 PC website 정보-->
+    <meta name="title" content="내꺼쇼핑몰">
+    <meta name="Author" content="내꺼">
+    <meta name="Keywords" content="품목, 품목, 품목">
+    <meta name="Description" content="쇼핑몰 설명">
+    
+    <!--포털사이트에 노출되는 모바일 website 정보-->
+    <meta property="og:type" content="mobilesite">
+    <meta property="og:title" content="내꺼쇼핑몰" />
+    <meta property="og:description" content="무엇이든지 팔수 수 있는 기적의 샵" />
+    <meta property="og:image" content="images/m_logo.jpg"/> <!-- 800x400 -->
+    
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+    
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+</head>
+<body>
+    <div id="popup">
+        <img src="images/popup.png" alt="">
+        <button onclick="cookieMake()">일주일간 보지 않기</button>
+        <button class="close">닫기</button>
+    </div>
+
+    <div id="header_km">
+        <div class="header_top">
+            <div class="center_box">
+                <div class="body_color">
+                    <i class="fa-solid fa-sun" onclick="mode('하양')"></i>
+                    <i class="fa-solid fa-moon" onclick="mode('검정')"></i>
+                </div>
+                <!-- 로그인 전 -->
+                <div class="member login_box">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">마이페이지</a>
+                    <a href="#">장바구니</a>
+                    <a href="#">배송조회</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">ABOUT US</a>
+                </div>
+                <!-- 로그인 후 -->
+                <div class="member logout_box">
+                    <a href="#">로그아웃</a>
+                    <a href="#">마이페이지</a>
+                    <a href="#">장바구니</a>
+                    <a href="#">배송조회</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">ABOUT US</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_middle">
+            <div class="center_box">
+                <h1>
+                    <a href="index.html">
+                        <i class="fa-solid fa-seedling"></i>
+                        <img src="images/logo.png" alt="로고">
+                    </a>
+                </h1>
+                
+                <div class="search_wrap">
+                    <form action="" method="">
+                        <fieldset>
+                            <legend>검색창</legend>
+                            <input type="text" placeholder="검색어를 입력해주세요">
+                            <button type="submit">
+                                <!-- <img src="images/search.png" alt="검색"> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="center_box">
+                <ul class="gnb">
+                    <li class="product"><a href="sub_skincare.html">제품</a>
+                        <ul class="lnb">
+                            <li><a href="sub_skincare.html">스킨케어</a>
+                                <ul class="lnb2">
+                                    <li><a href="#">스킨</a></li>
+                                    <li><a href="#">로션</a></li>
+                                    <li><a href="#">에센스/세럼</a></li>
+                                    <li><a href="#">페이스 오일</a></li>
+                                    <li><a href="#">마사지</a></li>
+                                    <li><a href="#">크림/젤</a></li>
+                                    <li><a href="#">립 케어</a></li>
+                                    <li><a href="#">아이 케어</a></li>
+                                    <li><a href="#">미스트</a></li>
+                                    <li><a href="#">기타</a></li>
+                                    <li><a href="#">대용량</a></li>
+                                    <li><a href="#">앰플 BEST 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">선케어</a></li>
+                            <li><a href="#">팩/마스크</a></li>
+                            <li><a href="#">페이스메이크업</a></li>
+                            <li><a href="#">컬러메이크업</a></li>
+                            <li><a href="#">클렌징</a></li>
+                            <li><a href="#">남성</a></li>
+                            <li><a href="#">바디</a></li>
+                            <li><a href="#">헤어</a></li>
+                            <li><a href="#">기획세트</a></li>
+                            <li><a href="#">네일</a></li>
+                            <li><a href="#">방향</a></li>
+                            <li><a href="#">미용소품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub_skincare.html">특가</a></li>
+                    <li><a href="sub_skincare.html">베스트</a></li>
+                    <li><a href="sub_skincare.html">신제품</a></li>
+                    <li><a href="sub_skincare.html">라이브</a></li>
+                    <li><a href="sub_skincare.html">FOR U</a></li>
+                    <li class="type">
+                        <a href="sub_skincare.html">라인별</a>
+                        <span></span>
+                        <a href="sub_skincare.html">고민별</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="visual_main">
+        <div class="center_box">
+            <div class="text_box tb1 active">
+                <span>25%</span><span>최대 30%</span>
+                <strong>그린티 세럼</strong>
+                <p>환절기 수분 공식! <br>
+                    수분+수분=수분폭발</p>
+                    <em>29,000원<b>21,750원</b></em>
+                <ul class="img_list">
+                    <li class="bd"><img src="images/main_img1.png" alt=""></li>
+                    <li><img src="images/main_img2.png" alt=""></li>
+                    <li><img src="images/main_img3.png" alt=""></li>
+                    <li><img src="images/main_img4.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="text_box tb2">
+                <span>27%</span>
+                <strong>블랙티 앰플</strong>
+                <p>200만병 판매 돌파! <br>
+                    확신의 안티에이징 앰플</p>
+                    <em>53,000원<b>38,690원</b></em>
+                <ul class="img_list">
+                    <li><img src="images/main_img1.png" alt=""></li>
+                    <li class="bd"><img src="images/main_img2.png" alt=""></li>
+                    <li><img src="images/main_img3.png" alt=""></li>
+                    <li><img src="images/main_img4.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="text_box tb3">
+                <span>28%</span><span>사은품</span>
+                <strong>콜라겐 탄력 앰플 크림</strong>
+                <p>쫀쫀탄탄 콜라겐크림<br>
+                    탄탄기획전 1만원 할인!</p>
+                    <em>38,000원<b>29,000원</b></em>
+                <ul class="img_list">
+                    <li><img src="images/main_img1.png" alt=""></li>
+                    <li><img src="images/main_img2.png" alt=""></li>
+                    <li class="bd"><img src="images/main_img3.png" alt=""></li>
+                    <li><img src="images/main_img4.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="text_box tb4">
+                <span>27%</span><span>사은품</span>
+                <strong>레타놀 시카 앰플</strong>
+                <p>트러블이 지나간 피부<br>
+                    레타놀 시카로 #깐달걀처럼</p>
+                    <em>40,000원<b>29,000원</b></em>
+                <ul class="img_list">
+                    <li><img src="images/main_img1.png" alt=""></li>
+                    <li><img src="images/main_img2.png" alt=""></li>
+                    <li><img src="images/main_img3.png" alt=""></li>
+                    <li class="bd"><img src="images/main_img4.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="section_km">
+        <div id="section1">
+            <div class="center_box">
+                <div class="h_box">
+                    <h2>BEST<span>PRODUCT</span></h2>
+                    <p>지금 제일 잘 나가는 이니스프리 상품</p>
+                </div>
+
+                <div class="prod_box op">
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img1.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블랙티 앰플 50ml [대용량] 2개</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">72,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img2.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">콜라겐 펩타이드 탄력 앰플 크림</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">29,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img3.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">그린티 씨드 세럼 80mL * 2개</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">40,600원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img4.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">콜라겐 탄력 크림 50mL+레티놀 시카 흔적 앰플 30mL</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">55,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img5.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블랙티 앰플 [대용량] 50ml + 블랙티 크림 45ml</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">59,500원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img6.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">레타놀 시카 흔적 앰플 [대용량]</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">42,750원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img7.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">블랙티 유스 인행싱 앰플 [대용량]</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">38,690원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec1_img8.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">그린티 씨드 크림 50ml * 2개</a></li>
+                        <li class="icons">
+                            <span class="pop">인기상품</span>
+                            <span class="gift">사은품증정</span>
+                        </li>
+                        <li class="price">35,000원</li>
+                        <li class="review">리뷰 <span class="review_count">1,000개</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <div class="center_box">
+                <div class="h_box">
+                    <h2>SALE<span>PROMOTION</span></h2>
+                    <p>특가 상품을 만난 지금이 바로 쇼핑 찬스!</p>
+                </div>
+            </div>
+            <div class="sale_box op">
+                <ul data-aos="zoom-in">
+                    <li class="thumb">
+                        <a href="#">
+                            <img src="images/sec2_img1.png"/>
+                            <span>40%</span>
+                        </a>
+                    </li>
+                    <li class="tit"><a href="#">애플씨드 립앤아이 메이크업 리무버</a></li>
+                    <li class="price">4,800원</li>
+                </ul>
+                <ul data-aos="zoom-in">
+                    <li class="thumb">
+                        <a href="#">
+                            <img src="images/sec2_img2.png"/>
+                            <span>40%</span>
+                        </a>
+                    </li>
+                    <li class="tit"><a href="#">심플라벨 마스카라 [롱앤컬 / 볼륨앤컬]</a></li>
+                    <li class="price">10,800원</li>
+                </ul>
+                <ul data-aos="zoom-in">
+                    <li class="thumb">
+                        <a href="#">
+                            <img src="images/sec2_img3.png"/>
+                            <span>40%</span>
+                        </a>
+                    </li>
+                    <li class="tit"><a href="#">스키니 꼼꼼카라 Zero [워터프루프]</a></li>
+                    <li class="price">6,600원</li>
+                </ul>
+                <ul data-aos="zoom-in">
+                    <li class="thumb">
+                        <a href="#">
+                            <img src="images/sec2_img4.png"/>
+                            <span>40%</span>
+                        </a>
+                    </li>
+                    <li class="tit"><a href="#">스키니 꼼꼼카라</a></li>
+                    <li class="price">6,000원</li>
+                </ul>
+            </div>
+        </div>
+        <div id="section3">
+            <div class="center_box">
+                <div class="h_box">
+                    <h2>NEW<span>PRODUCT</span></h2>
+                    <p>주목해야 할 이니스프리 신제품</p>
+                </div>
+
+                <div class="new_prod_box op">
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec3_img1.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">바르는 콜라겐 크림</a></li>
+                        <li class="desc">모공 집중 케어로 만드는 #쫀쫀탄탄 피부! 콜라겐 펩타이드 탄력 앰플 크림</li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec3_img2.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">애프터케어 그 잡채!</a></li>
+                        <li class="desc">기존 함량 20% 보다 더 많은
+                            순수 비타민C 23% #7일잡티개선앰플</li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec3_img3.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">화산송이 모공 바하 클렌징 폼(feat.BHA)</a></li>
+                        <li class="desc">베스트셀러로 갓생살던 화산송이 모공폼
+                            화산송이철을 맞아 더 강력해져 돌아왔습니다!</li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec3_img4.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">여름 베이스 절대 지켜!</a></li>
+                        <li class="desc">필터 쓴 듯 결점없는 피부 표현은 기본
+                            한 여름에도 무너지지 않는 베이스 박제!</li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec3_img5.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">힛팬 예약! 음영 정석 팔레트</a></li>
+                        <li class="desc">뷰티 크리에이터 뽐니's PICK
+                            9가지 음영 컬러 준비완!</li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="thumb">
+                            <a href="#">
+                                <img src="images/sec3_img6.png"/>
+                            </a>
+                        </li>
+                        <li class="tit"><a href="#">#단종금지템 이라 리뉴얼했어요!</a></li>
+                        <li class="desc">물처럼 가벼운 사용감과 강력한 세정력은 그대로
+                            더 촉촉하게 리뉴얼해 돌아왔습니다 많관부!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="section4">
+            <div class="center_box">
+                <div class="bn_textbox">
+                    <em>앱전용</em>
+                    <h3>지금 모바일앱 접속하면<br>
+                        <span>최대 1만원</span> 할인 혜택
+                    </h3>
+                    <button>혜택 자세히 보러가기</button>
+                </div>
+            </div>
+        </div>
+        <div id="section5">
+            <div class="center_box">
+                <div class="h_box">
+                    <h2>이니스프리<span>멤버십 혜택</span></h2>
+                    <p>이니스프리 멤버십 회원이 되시면 이니스프리에서 제공하는 다양한 혜택을 받으실 수 있습니다</p>
+                </div>
+
+                <div class="membership_box">
+                    <ul data-aos="zoom-in">
+                        <li class="icon">
+                            <img src="images/sec5_icon1.png"/>
+                        </li>
+                        <li class="sec5_text">
+                            <span>멤버십데이 혜택</span>
+                            <p>최대 30% 할인</p>
+                        </li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="icon">
+                            <img src="images/sec5_icon2.png"/>
+                        </li>
+                        <li class="sec5_text">
+                            <span>시크릿 쿠폰</span>
+                            <p>월 1회 할인 쿠폰 제공</p>
+                        </li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="icon">
+                            <img src="images/sec5_icon3.png"/>
+                        </li>
+                        <li class="sec5_text">
+                            <span>구매 적립</span>
+                            <p>구매 금액 1% 적립</p>
+                        </li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="icon">
+                            <img src="images/sec5_icon4.png"/>
+                        </li>
+                        <li class="sec5_text">
+                            <span>생일 혜택</span>
+                            <p>40% 할인 쿠폰 지급</p>
+                        </li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="icon">
+                            <img src="images/sec5_icon5.png"/>
+                        </li>
+                        <li class="sec5_text">
+                            <span>그린티 클럽 키트</span>
+                            <p>연 2회 신청</p>
+                        </li>
+                    </ul>
+                    <ul data-aos="zoom-in">
+                        <li class="icon">
+                            <img src="images/sec5_icon6.png"/>
+                        </li>
+                        <li class="sec5_text">
+                            <span>MY SHOP 혜택</span>
+                            <p>제품 할인 및 쿠폰 지급</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="footer_km">
+        <div class="center_box">
+            <h1><a href="#"><img src="images/ft_logo.png" alt=""></a></h1>
+            <ul class="link_menu">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상정보처리기기 운영/관리 방침</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">임직원서비스</a></li>
+                <li><a href="#">이메일 주소 무단 수집 거부</a></li>
+            </ul>
+            <div class="addres">
+                <p>
+                    (주)이니스프리 서울특별시 용산구 한강대로 100(한강로2가) 7층 이니스프리 대표이사 : 최민정<br>
+                    사업자 등록번호 : 106-86-68127 | 통신판매신고번호 : 2018-서울용산-0014 | 제품 문의 : 080-380-0114 | FAX : 02-6040-7108<br>
+                    이메일 주소 : innisfree@innisfree.com | 비즈니스제휴/입점문의 : partner.biz@innisfree.com<br>
+                    개인정보 보호책임자 : 정구화 | 호스팅 서비스 제공자 : ㈜이니스프리
+                </p>
+                <p>
+                    저희 쇼핑몰은 고객님의 안전한 거래를 위해 무통장입금 거래에 대해 구매안전서비스를 적용하고 있습니다.<br>
+                    <a href="#">토스페이먼츠 구매안전 서비스 가입확인</a>
+                </p>
+                <p class="copyright">
+                    Copyright © 2019 Innisfree. All Rights Reserved.
+                </p>
+            </div>
+            <div class="call_box">
+                <span>고객 서비스 센터 이용안내</span>
+                <strong>080-380-0114</strong>
+                <em>운영시간 09:00 ~ 18:00 (주말 및 공휴일 휴무)<br>
+                    점심시간 12:00 ~ 13:00</em>
+            </div>
+            <button>1:1 상담하러 가기</button>
+        </div>
+    </div>
+
+
+
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/innisfree.js"></script>
+    <script src="script/skrollr.js"></script>
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+
+    <script>
+        var s = AOS.init();
+        // var s = skrollr.init();
+    </script>
+
+    <script>
+        // 팝업창 닫기 (쿠키 삭제)
+        if(document.cookie.indexOf('merong') > -1){
+            $('#popup').hide();
+        }
+
+        function cookieMake(){
+            var today = new Date;
+            var date = today.getDate();
+            var delDate = date + 7; //삭제날짜
+            today.setDate(delDate)
+
+            var cookiePopup = '';
+            cookiePopup += 'kmPopup = merong; expires = ' + today
+
+            document.cookie = cookiePopup;
+
+            $('#popup').hide();
+        }
+
+        $('.close').click(function(){
+            $('#popup').hide();
+        })
+
+        // 다크모드
+        if(document.cookie.indexOf('검정') > -1){
+            dark ()
+        }
+        // 라이트모드
+        if(document.cookie.indexOf('하양') > -1){
+            light ()
+        }
+
+        function mode(color){
+            // if(color == '검정'){
+            //     dark()
+            // }
+            // if(color == '하양'){
+            //     light()
+            // }
+            (color == '검정')?dark():light();
+        }
+
+        function dark(){
+            document.cookie = bodyColor = '검정';
+            $('body').addClass('dark');
+            $('.fa-moon').hide();
+            $('.fa-sun').show();
+        }
+        function light(){
+            document.cookie = bodyColor = '하양';
+            $('body').removeClass('dark');
+            $('.fa-sun').hide();
+            $('.fa-moon').show();
+        }
+    </script>
+</body>
+</html>
